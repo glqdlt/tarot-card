@@ -61,7 +61,7 @@ public abstract class Hands {
 
     public final Tarot getTarot() {
         if (isCardEmpty()) {
-            throw new RuntimeException("Tarot Deck is Empty");
+            throw new DeckEmptyError();
         }
         int zz = nextInt();
         Tarot y = getDeck().get(zz);
