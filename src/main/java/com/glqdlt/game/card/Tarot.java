@@ -18,13 +18,17 @@ public class Tarot {
         this.position = CardPosition.UP;
     }
 
-    public void changePosition() {
+    public void positionToggle() {
         CardPosition z = getPosition();
         if (z.equals(CardPosition.UP)) {
             this.position = CardPosition.DOWN;
         } else {
             this.position = CardPosition.UP;
         }
+    }
+
+    public boolean isTarotDown() {
+        return this.getPosition().equals(CardPosition.DOWN);
     }
 
     public CardPosition getPosition() {
