@@ -18,7 +18,7 @@ public class LocalRandomRandomDeckShuffleStrategy implements RandomDeckShuffleSt
         for (Tarot t : deck) {
             int y = nextInt();
             if (y % 2 == 0) {
-                t.changePosition();
+                t.positionToggle();
             }
         }
         return deck;

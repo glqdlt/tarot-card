@@ -14,9 +14,10 @@ import java.util.stream.Stream;
  *
  * @author glqdlt
  */
-public class DefaultDeckSetupStrategy implements DeckSetupStrategy {
+public class DefaultDeckMaker implements DeckMaker {
+
     @Override
-    public List<Tarot> setDecks() {
+    public List<Tarot> make() {
         return Stream.of(
                 MajorCards.values(),
                 SwordMinorCards.values()

@@ -10,6 +10,6 @@ import java.util.List;
  * @author glqdlt
  */
 @FunctionalInterface
-public interface DeckSetupStrategy {
-    List<Tarot> setDecks();
+public interface DeckMaker {
+    List<Tarot> make();
 }

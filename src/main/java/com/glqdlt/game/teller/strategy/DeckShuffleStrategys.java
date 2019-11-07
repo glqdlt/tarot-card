@@ -9,8 +9,9 @@ import java.util.Collections;
  *
  * @author glqdlt
  */
-public class DeckShuffleStrategyArchive {
+public class DeckShuffleStrategys {
 
+    public final static DeckShuffleStrategy NOT_SHUFFLE = x -> x;
     /**
      * 그냥 현재 덱을 쓰까버림
      */
